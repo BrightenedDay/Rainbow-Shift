@@ -18,12 +18,14 @@
 
 			.panel {
 				background-color: #fff;
-				padding: 40px;
+				padding: 20px;
 				border-radius: 15px;
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 				text-align: center;
 				width: 55%;
-				height: 50%;
+				max-width: 600px;
+				height: auto;
+				overflow: auto;
 			}
 	
 			h1 {
@@ -34,6 +36,7 @@
 				line-height: 1.5;
 				letter-spacing: 1px;
 				user-select: none;
+				margin-bottom: 1rem;
 			}
 
 			#label3 {
@@ -45,6 +48,17 @@
 				letter-spacing: 1px;
 				transform: rotate(90deg);
 				user-select: none;
+				margin-bottom: 1rem;
+			}
+
+			@media (max-width: 600px) {
+				h1 {
+					font-size: 1.5rem;
+				}
+
+				#label3 {
+					font-size: 1.5rem;
+				}
 			}
 		</style>
 	</head>
